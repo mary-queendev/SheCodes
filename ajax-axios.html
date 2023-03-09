@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Ajax Axios</title>
+  </head>
+  <body>
+    <script>
+      function showUser(response) {
+        alert(`The user name is ${response.data.name}`);
+        console.log(response.data);
+      }
+
+      let url = "https://jsonplaceholder.typicode.com/users/1";
+      axios.get(url).then(showUser);
+    </script>
+  </body>
+</html>
