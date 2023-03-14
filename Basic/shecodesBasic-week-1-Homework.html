@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic week 1 general Homework</title>
+    <style>
+        * {
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .current {
+            color: #1a64d6;
+
+        }
+
+        .first {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .forecast {
+            font-size: 18px;
+            margin: 20px auto;
+            max-width: 300px;
+            transition: all 200ms ease-in-out;
+            padding: 5px 0;
+
+        }
+
+        .forecast:hover {
+            background-color: #fffaef;
+        }
+
+        .degree {
+            font-family: monospace;
+            opacity: 0.7;
+        }
+
+        button {
+            color: #ffffff;
+            border: 1px solid #1a64d6;
+            padding: 15px 20px;
+            display: block;
+            margin: 20px auto;
+            background: #1a64d6;
+            font-size: 16px;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+            color: #1a64d6;
+            cursor: pointer;
+        }
+
+        .name {
+            opacity: 0.7;
+            font-family: monospace;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="current">
+            <h1>
+                ⛅ <br>
+                Currently 21&deg; in Tokyo
+            </h1>
+        </div>
+        <span class="first">13&deg; / <strong>23&deg;</strong></span>
+        <div class="forecast">
+            <strong>🌧️ Tomorrow</strong><br><br>
+            <div class="degree">10&deg; / <strong> 22&deg;</strong></div>
+        </div>
+        <div class="forecast">
+            <strong>🌥️ Saturday</strong><br><br>
+            <div class="degree">15&deg; / <strong> 17&deg;</strong></div>
+        </div>
+        <div class="forecast">
+            <strong>☀️ Sunday</strong><br><br>
+            <div class="degree">25&deg; / <strong> 28&deg;</strong></div>
+        </div>
+        <button>Change city</button>
+        <span class="name">Coded by Mary Ogbeide</span>
+    </div>
+
+</body>
+
+</html>
